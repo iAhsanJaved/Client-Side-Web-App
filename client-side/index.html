@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Client Side Student App</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/bsadmin.css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body onload="displayStudents()">
+
+<nav class="navbar navbar-expand navbar-dark bg-primary">
+    <a class="sidebar-toggle text-light mr-3"><i class="fa fa-bars"></i></a>
+
+    <a class="navbar-brand" href="#"><i class="fa fa-code-branch"></i> Student App</a>
+
+    
+</nav>
+
+<div class="d-flex">
+    <nav class="sidebar bg-dark">
+        <ul class="list-unstyled">
+            <li><a href="#" onclick="return displayStudents()"><i class="fa fa-fw fa-graduation-cap"></i> Students</a></li>
+            <li><a href="#" onclick="return addStudent()"><i class="fa fa-fw fa-plus"></i> Add Student</a></li>
+        </ul>
+    </nav>
+
+    <div class="content p-4" id="main-content" onload="">
+        <h1 id="heading-title" class="display-5 mb-4">Students</h1>
+        <div id="content"></div>
+           
+    </div>
+    
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bsadmin.js"></script>
+
+</body>
+</html>
